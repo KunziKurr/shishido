@@ -77,6 +77,7 @@ export default {
     row-gap: 1rem;
     column-gap: 1.4rem;
     fill: #fff;
+    margin-left:40%;
     & svg{
          height: 2rem;
     width: 2rem;

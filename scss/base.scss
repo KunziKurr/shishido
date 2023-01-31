@@ -1,0 +1,138 @@
+.base {
+    position: relative;
+    width: 100%;
+    &_container {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        // color presets
+        background-image: linear-gradient(45deg, #1e2c4c 44%, rgb(30 44 76 / 78%) 61%);
+        z-index: -1;
+        &_controller {
+            position: relative;
+            width: 100%;
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_sub1 {
+                height: 74vh;
+                display: flex;
+                align-items: center;
+                &_wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    &_btn {
+                        &_left,
+                        &_right {
+                            background-color: unset;
+                            height: 15rem;
+                            width: 15rem;
+                            border: 1px solid #ffffff1f;
+                            border-radius: 50%;
+                            & svg {
+                                height: 5rem;
+                                width: 12rem;
+                                fill: #cccccca1;
+                            }
+                        }
+                        &_left {
+                            margin-left: -4rem;
+                            & svg {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        &_right {
+                            margin-right: -4rem;
+                        }
+                    }
+                    &_mid_cont {
+                        width: 60%;
+                        display: flex;
+                        align-items: center;
+                        // justify-content: center;
+                        &_headline {
+                            font-size: 10rem;
+                            font-family: monospace;
+                        }
+                    }
+                }
+            }
+            &_sub2 {
+                width: 60%;
+                display: flex;
+                align-self: center;
+                transform: translateY(-1rem);
+                &_wrapper {
+                    display: flex;
+                    align-items: flex-end;
+                    position: relative;
+                    &_price {
+                        font-size: 1.4rem;
+                        color: #fff;
+                    }
+                    &_ratings {
+                        display: flex;
+                        column-gap: .5rem;
+                        & svg {
+                            fill: #6c6868;
+                            cursor: pointer;
+                            &:first-child {
+                                margin-left: -.5rem;
+                            }
+                        }
+                    }
+                    &_desc {
+                        font-size: 1.3rem;
+                        width: 80%;
+                        color: #fff;
+                    }
+                    &_container {
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                    }
+                }
+                &_buy_now {
+                    position: absolute;
+                    right: 3rem;
+                    bottom: 3rem;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    letter-spacing: 1px;
+                    border-bottom: 1px solid #fff;
+                    width: 15%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    text-indent: 1.2rem;
+                    & svg {
+                        width: 3rem;
+                        height: 3rem;
+                        fill: currentColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @font-face {
+//     font-family: "Nunito-Reg";
+//     src: url("../src/assets/fonts/Nunito-Regular.ttf");
+// }
+// @font-face {
+//     font-family: "Nunito-Bold";
+//     src: url("../src/assets/fonts/Nunito-Bold.ttf");
+// }
+// @font-face {
+//     font-family: "Nunito-Light";
+//     src: url("../src/assets/fonts/Nunito-Light.ttf");
+// }
